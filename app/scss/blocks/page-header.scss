@@ -1,0 +1,13 @@
+.page-header {
+  /*временные стили*/
+  /* background: rgba(120, 198, 214, 0.3);
+   border: 1px solid rgba(237, 112, 20, 0.3);*/
+  background: initial;
+  border: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 768pxpx) {}
+}

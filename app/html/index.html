@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <!-- подключаем meta, title, css -->
+  @@include('page/head-data.html')
+</head>
+
+<body>
+
+<!--  begin SVG sprite-->
+<svg style="display: none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <symbol id="arrow-right-link" viewBox="0 0 32 12" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.6 0l6.6 5.5-6.6 5.5V6.6H0V4.4h17.6z"></path>
+  </symbol>
+
+</svg>
+<!--  end SVG sprite-->
+
+<!-- пример подключения картинок, и html-блоков, удалить перед началом работы -->
+
+
+<!-- подключаем шапку -->
+<div class="container container-header">
+  @@include('blocks/page-header.html')
+  @@include('blocks/main-nav.html')
+</div>
+
+<main class="main">
+
+  @@include('blocks/banner.html')
+
+  <div class="container">
+    @@include('blocks/programme.html')
+    @@include('blocks/about-programme.html')
+  </div>
+
+  @@include('blocks/case.html')
+  @@include('blocks/map.html')
+
+
+</main>
+
+<!-- подключаем подвал -->
+@@include('blocks/page-footer.html')
+
+
+<!-- подключаем js -->
+<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

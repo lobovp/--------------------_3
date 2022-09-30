@@ -1,0 +1,17 @@
+@import "variables", //пишем переменные
+"base", //глобальные стили
+"normalize", //сборс стилей
+"fonts", //подключаем шрифты (локально)
+"buttons"; //подключаем кнопки (локально)
+//подключаем БЭМ блоки
+@import "blocks/page-header",
+"blocks/main-nav",
+"blocks/banner",
+"blocks/programme",
+"blocks/products",
+"blocks/goods",
+"blocks/about-programme",
+"blocks/case",
+"blocks/map",
+"blocks/page-footer",
+"blocks/programme-form";

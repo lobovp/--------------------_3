@@ -1,0 +1,9 @@
+/* oswald-regular - cyrillic */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald'),
+  url('../fonts/Oswald/Oswald-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/Oswald/Oswald-regular.woff') format('woff'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+}

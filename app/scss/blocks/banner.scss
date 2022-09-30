@@ -1,0 +1,138 @@
+.banner {
+  /*  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;*/
+  //width: 100%;
+  min-height: 478px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  background-color: #63a73a; //дублируем цвет фона
+  background-image: url("../../img/index-background-mobile 2x.jpg"), linear-gradient(180deg, #64a83b 63.4%, #fff 63.4%);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 320px, 100%;
+
+  @media (min-width: 768px) {
+    position: relative;
+    align-items: flex-start;
+    background: none;
+  }
+
+  &__content {
+    display: grid;
+    @media (min-width: 768px) {
+      min-width: 708px;
+    }
+  }
+
+  &__header {
+    width: 100%;
+    // min-height: 480px;
+    margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      background-image: none;
+      background-color: transparent;
+      min-height: initial;
+      z-index: 10;
+      margin-left: 6em;
+      margin-bottom: 2.25em;
+    }
+  }
+
+  &__title {
+    font-size: 2.25rem;
+    /* 36/16 */
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    margin: 0 1em;
+    padding: 1em 0;
+
+    @media (min-width: 768px) {
+      color: #000000;
+      font-size: 3.75rem;
+      /* 60/16 */
+      text-align: left;
+      margin: 33px auto 28px 85px;
+      padding-bottom: 0;
+    }
+  }
+
+  &__text {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      color: #000000;
+      font-size: 1.25rem;
+      /* 20/16 */
+      text-align: left;
+      margin-left: 85px;
+    }
+  }
+
+  &__picture {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    // margin-top: -145px;
+
+    @media (min-width: 768px) {
+      /*position: absolute;*/
+      grid-column: 1/-1;
+      grid-row: 3/5;
+      margin: 0 auto;
+      padding-top: 2.5em;
+      order: 3;
+      z-index: 0;
+    }
+
+    @media (min-width: 1440px) {
+      flex-wrap: wrap;
+      max-width: 600px;
+      height: 600px;
+      object-fit: cover;
+      background-image: url(../../img/bg-desktop.jpg);
+      background-repeat: no-repeat;
+      right: 0;
+      z-index: 0;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &__btn {
+    width: 100%;
+    margin-top: auto;
+    font-family: Oswald, Arial, sans-serif;
+    font-size: 0.875rem;
+    /* 14/16 */
+    line-height: 18px;
+    text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      grid-column-start: 1;
+      grid-row-start: 3;
+      margin-top: 0;
+      width: 245px;
+      font-size: 1.25rem;
+      /* 20/16 */
+      padding: 0.75em 1.25em;
+      z-index: 10;
+      margin-left: 85px;
+      margin-top: 28px;
+    }
+
+    &--color {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+//backgrounds
+$basic-bg: #FFFFFF;
+$basic-green: #68B738;
+$special_grey: #CDCDCD;
+/*borderColor*/
+$special_grey2: #EBEBEB;
+
+$status_error: #FF8282;
+$basic_green-2: #5EAA2F;
+
+$svgfilter: url('#svgfilter');
+
+//color fonts
+$mainColor: #444444;
+/*mainColor, buttonColor*/
+$mainColorSecondary: #111111;
+$navlink: #000000;
+$navlinkDesktop: #ffffff;
+$basic-grey:#F2F2F2;
+$special-grey:#cdcdcd;
+$special_dark-grey-2:#222222;
+
+
+//fonts
+$font-family-base: 'Oswald',
+Arial,
+sans-serif;
+$line-height-base: 1.5;
+$font-style-base: normal;
+$font-weight-base: 400;
+$color-base: #444;
+
+//отступы
+$grid-gap: 90px;
+$small-padding: 22px //mixins
+/*
+%text-font {
+  font-size: 1rem; //16px
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+}*/

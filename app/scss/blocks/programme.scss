@@ -1,0 +1,185 @@
+.programme {
+  display: grid;
+  row-gap: 20px;
+  padding: 12px 0;
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    flex: 50%;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    padding: 24px 20px;
+    @media (min-width: 768px) {
+      padding: 3.25rem; /* 52/16 */
+    }
+    @media (min-width: 1440px) {
+      padding: 3.25rem;
+      width: 47%;
+    }
+  }
+
+  &__item-content {
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d9d9d9;
+    @media (min-width: 768px) {
+      border-bottom: none;
+    }
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 85px;
+    text-transform: uppercase;
+    font-size: 1.75rem; /* 24/16 */
+    line-height: 1.5;
+    @media (min-width: 768px) {
+      padding-left: 0;
+    }
+    @media (min-width: 1440px) {
+      justify-content: center;
+      margin-bottom: 3em;
+    }
+
+    &--cat {
+      &:before {
+        content: "";
+        width: 50px;
+        height: 53px;
+        position: absolute;
+        left: 0;
+        align-content: center;
+        background-image: url("../../img/icons/cat_mobile.svg");
+        background-repeat: no-repeat;
+        @media (min-width: 768px) {
+          top: -135px;
+          left: auto;
+          right: 10px;
+          width: 200px;
+          height: 211px;
+          transform: translateY(50%);
+          background-image: url(../../img/icons/cat_tablet.svg);
+        }
+        @media (min-width: 1440px) {
+          width: 100px;
+          height: 106px;
+          top: -85px;
+          left: 0;
+          align-content: center;
+          background-image: url("../../img/icons/cat_desktop.svg");
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    &--puma {
+      &:before {
+        content: "";
+        width: 67px;
+        height: 50px;
+        position: absolute;
+        left: 0;
+        align-content: center;
+        background-image: url("../../img/icons/puma_mobile.svg");
+        background-repeat: no-repeat;
+        @media (min-width: 768px) {
+          top: -130px;
+          left: auto;
+          right: -20px;
+          width: 270px;
+          height: 211px;
+          transform: translateY(50%);
+          background-image: url(../../img/icons/puma_tablet.svg);
+        }
+        @media (min-width: 1440px) {
+          top: -130px;
+          left: 0;
+          align-content: center;
+          background-image: url("../../img/icons/puma_desktop.svg");
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+
+  &__img {
+    order: 1;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--cat {
+      width: 50px;
+      height: 53px;
+      background-image: url("../../img/icons/cat_mobile.svg");
+    }
+
+    &--puma {
+      width: 67px;
+      height: 50px;
+      background-image: url("../../img/icons/puma_mobile.svg");
+    }
+  }
+
+  &__text {
+    font-size: 1rem; /* 16/16 */
+    line-height: 1.5;
+    width: 100%;
+    margin: 14px 0;
+    @media (min-width: 768px) {
+      max-width: 377px;
+      padding-right: 25px;
+      border-bottom: initial;
+    }
+  }
+
+  &__link {
+    //min-width: 40%;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    font-size: 1.185rem; /* 16/16 */
+    line-height: 1;
+    color: #000000;
+    text-transform: uppercase;
+    cursor: pointer;
+    @media (min-width: 768px) {
+      font-size: 1.25rem; /* 20/16 */
+      line-height: 1.5;
+    }
+
+    &:hover {
+      color: red;
+      fill: red;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, .3);
+      fill: rgba(0, 0, 0, .3);
+      stroke: rgba(0, 0, 0, .3);
+    }
+  }
+
+  &__link-icon {
+    margin-left: 20px;
+    width: 32px;
+    height: 12px;
+  }
+}
+
+
+
+
+
+
+
